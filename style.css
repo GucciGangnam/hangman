@@ -1,0 +1,44 @@
+body { 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.rules {
+    border: black solid 1px;
+}
+
+
+
+.lives{ 
+    border: black solid 1px;
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+    font-size: 50px;
+}
+
+
+
+.buttons { 
+    border: black solid 1px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+button { 
+    color: red;
+    font-size: 50px;
+}
+
+
+
+.word{ 
+    border: black solid 1px;
+    padding: 50px;
+}

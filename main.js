@@ -34,4 +34,23 @@ function guess() {
     }
     this.remove();
     console.log(lives)
+    checkForWin();
+    checkForLoss();
+}
+
+function checkForWin() { 
+    let currentWord = '';
+    for (let i = 0; i<chosenWord.length; i++){ 
+        currentWord += document.getElementById(i).innerHTML;
+    }
+    console.log(currentWord)
+    if (currentWord == chosenWord) { 
+        alert('you win!') // WHAT HAPPEMES IF YOU WIN?
+    }
+}
+
+function checkForLoss() { 
+    if (lives < 1) { 
+        alert('oh no you lost') // WHAT HAPPEMES IF YOU LOSE?
+    }
 }
